@@ -78,8 +78,7 @@ namespace MTU
                                 {
                                     return true;
                                 }
-                                else
-                                    reader.Close();
+                                reader.Close();
                                 process.WaitForExit();
                                 process.Close();
                                 return false;
